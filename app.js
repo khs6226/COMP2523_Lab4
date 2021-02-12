@@ -26,6 +26,9 @@ app.post("/myForm", (req, res) => {
 
 app.get("/myListQueryString", (req, res) => {
   // Add your implementation here
+  let data = Object.values(req.query);
+  console.log('query', data);
+  res.render('pages/', { movies: data});
 });
 
 app.get("/search/:movieName", (req, res) => {
