@@ -10,7 +10,14 @@
 
 <body>
   <!-- Your Code Goes Here -->
-
+  <% if(typeof(movieName) === "undefined") { %> 
+    <h1 class='notFound'>Movie could not be found</h1>  
+    <a href="/" class='returnHome'>Back to Home</a>
+  <% } else { %> 
+    <h1 class='movieTitle'><%= movieName %></h1>
+    <p class='movieDesc'><%= movieDesc %></p>
+    <a href="/" class='returnHome'>Back to Home</a>
+  <% } %>
 </body>
 
 </html>

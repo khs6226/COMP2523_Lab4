@@ -113,3 +113,19 @@ body {
   -webkit-transform-origin: left;
           transform-origin: left;
 }
+.notFound {
+  color: red;
+}
+.movieTitle {
+  color: yellowgreen;
+}
+.movieDesc {
+  color: white;
+}
+.returnHome {
+  padding: 0.5rem;
+  background-color: white;
+  border-radius: 25px;
+  color: #7665fb;
+  text-decoration: none;
+}
