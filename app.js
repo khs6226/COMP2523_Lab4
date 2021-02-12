@@ -16,8 +16,12 @@ app.get("/", (req, res) => res.render("pages/index"));
 
 app.get("/myForm", (req, res) => res.render("pages/myForm"));
 
-app.post("myForm", (req, res) => {
+app.post("/myForm", (req, res) => {
   // Add your implementation here 
+  let data = req.body.movies.split(", ");
+  console.log(data);
+
+  res.render('pages/', { movies: data });
 });
 
 app.get("/myListQueryString", (req, res) => {
